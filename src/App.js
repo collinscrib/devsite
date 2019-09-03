@@ -7,7 +7,7 @@ import Navigator from './components/Navigator.js';
 
 function App() {
   return (
-    <Router basename={'/~collin.scribner'}>
+    <Router>
       <Route path={`/`} exact component={LandingPage} />
       <Route path={`/about`} exact component={AboutMe} />
       <Route path={`/professional`} exact component={Professional} />
