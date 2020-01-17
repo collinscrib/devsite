@@ -8,8 +8,17 @@ export default class Navigator extends Component {
     render() {
         return (
             <div id="navigator">
-                <Navbar variant="dark" expand="lg" fixed="top">
-                    <LinkContainer to="/"><Navbar.Brand>Collin Scribner</Navbar.Brand></LinkContainer>
+                <Navbar variant="dark" expand="lg" fixed="top" className="main-bg">
+                    <Navbar.Brand href="/">
+                        <img
+                            alt=""
+                            src="/logo.png"
+                            width="30"
+                            height="30"
+                            className="d-inline-block align-top"
+                        />
+                        {' Collin Scribner'}
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav pullLeft variant="pills">
@@ -17,13 +26,13 @@ export default class Navigator extends Component {
                                 <Nav.Link>About</Nav.Link>
                             </LinkContainer>
                             <LinkContainer to="/professional">
-                                <Nav.Link>Professional</Nav.Link>
+                                <Nav.Link>Resume</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/portfolio">
-                                <Nav.Link>Portfolio</Nav.Link>
+                            <LinkContainer to="/links">
+                                <Nav.Link>Links</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/service">
-                                <Nav.Link>Service</Nav.Link>
+                            <LinkContainer to="/csce445">
+                                <Nav.Link>CSCE 445</Nav.Link>
                             </LinkContainer>
                         </Nav>
                     </Navbar.Collapse>

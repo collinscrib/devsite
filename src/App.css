@@ -101,6 +101,14 @@ a:hover {
   margin-right: 0.5rem;
 }
 
+.main-text {
+  position: relative;
+  display: inline-block;
+  margin: .25em;
+  padding: .5em .75em;
+  color: var(--main-text-color);
+}
+
 .portfolio {
   text-align: left!important;
   margin: 0 auto;
@@ -125,13 +133,34 @@ ul, li {
 }
 
 .vertical-center {
-  margin: 0;
+  /*margin-top: 2rem;*/
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   min-width: 100vw;
   min-width: 100%;
+  /*min-height: 100%;*/
+}
+
+.vertical-center-csce {
+  margin-top: 3rem;
+  position: absolute;
+  min-width: 100vw;
+  min-width: 100%;
+  min-height: 100vh;
+  min-height: 100%;
+}
+
+.resume {
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.csce_img {
+  padding: 1em;
+  display: block;
+  margin: auto;
 }
 
 /* /////////////////
