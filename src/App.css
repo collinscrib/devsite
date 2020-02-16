@@ -116,6 +116,10 @@ a:hover {
   max-width: 75%;
 }
 
+.assignment2 {
+  margin-top: 10rem;
+}
+
 .secondary-text {
   color: var(--main-text-color);
 }

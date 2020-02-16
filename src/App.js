@@ -13,6 +13,7 @@ function App() {
       <Route path={`/professional`} exact component={Professional} />
       <Route path={`/links`} exact component={Links} />
       <Route path={`/csce445`} exact component={CSCE445} />
+      <Route path={`/csce445/assignment2`} exact component={CSCE445_page2} />
     </Router>
   );
 }
@@ -135,6 +136,7 @@ function CSCE445() {
             </p>
             <ul>
               <li><a href="https://collinscribner.com">Assignment 1 - this website</a></li>
+              <li><a href="https://collinscribner.com/csce445/assignment2">Assignment 2 - comparisons between classmates websites</a></li>
             </ul>
             <p class="secondary-text">
               Feel free to contact me at my school email, <a href="mailto:collin.scribner@tamu.edu">collin.scribner@tamu.edu</a>.
@@ -145,27 +147,38 @@ function CSCE445() {
   );
 }
 
-/* DEPRECATED, NO LONGER USED */
-// function Service() {
-//   return (
-//     <div className="App">
-//       <Navigator />
-//       <container className="text-center vertical-center">
-//           <div className="text-center portfolio">
-//               <p class="secondary-text">
-//                 A good portion of service that I do for the community around College Station includes volunteer ministry work and
-//                 volunteer work at a food pantry through my student organization, Beta Upsilon Chi (BYX - Brothers Under Christ).
-//               </p>
-//           </div>
-//           <div className="text-center">
-//             <Button className="linkButton" variant="outline-secondary" size="sm" href="https://www.breakawayministries.org/">Breakaway Ministries</Button>
-//             <Button className="linkButton" variant="outline-secondary" size="sm" href="https://betaupsilonchi.org/">BYX Nationals</Button>
-//           </div>
-//         </container>
-//       </div>
-//   );
-// }
-/******************************/
+function CSCE445_page2() {
+  return (
+    <div className="App">
+      <Navigator />
+      <container className="text-center vertical-center-csce">
+        <div className="text-center portfolio assignment2">
+            <p class="secondary-text">
+            As I looked through the majority of the websites by other students that are taking this class, some common themes 
+            that came up included a fascination with the way our society interacts with modern media, netflix and youtube as 
+            primary video streaming services, and spotify and youtube being the primary music consumption platforms. Below 
+            are some examples.
+            </p>
+            <p class="secondary-text">Modern media shaping our general interactions:</p>
+            <ul>
+              <li><a href="http://people.tamu.edu/~alizain/Media.html">example 1</a></li>
+              <li><a href="http://people.tamu.edu/~alizain/Media.html">example 2</a></li>
+            </ul>
+            <p class="secondary-text">Video streaming similarities:</p>
+            <ul>
+              <li><a href="https://sites.google.com/a/tamu.edu/445-site/my-media">example 1</a></li>
+              <li><a href="https://sites.google.com/tamu.edu/lauralara/home">example 2</a></li>
+            </ul>
+            <p class="secondary-text">Music streaming similarities:</p>
+            <ul>
+              <li><a href="https://sites.google.com/tamu.edu/roniphillips/csce-445/assignment-1?authuser=0">example 1</a></li>
+              <li><a href="http://people.tamu.edu/~mtrea/CSCE445.html">example 2</a></li>
+            </ul>
+        </div>
+      </container>
+    </div>
+  );
+}
 
 const Emoji = props => ( // from https://medium.com/@seanmcp/%EF%B8%8F-how-to-use-emojis-in-react-d23bbf608bf7
   <span
