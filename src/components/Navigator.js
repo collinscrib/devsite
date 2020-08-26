@@ -31,9 +31,6 @@ export default class Navigator extends Component {
                             <LinkContainer to="/links">
                                 <Nav.Link>Links</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/csce445">
-                                <Nav.Link>CSCE 445</Nav.Link>
-                            </LinkContainer>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

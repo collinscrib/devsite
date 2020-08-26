@@ -12,8 +12,6 @@ function App() {
       <Route path={`/about`} exact component={AboutMe} />
       <Route path={`/professional`} exact component={Professional} />
       <Route path={`/links`} exact component={Links} />
-      <Route path={`/csce445`} exact component={CSCE445} />
-      <Route path={`/csce445/assignment2`} exact component={CSCE445_page2} />
     </Router>
   );
 }
